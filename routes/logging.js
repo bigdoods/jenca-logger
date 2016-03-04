@@ -20,7 +20,7 @@ module.exports = function(config){
               throw new Error('logging destination: ' + destination + ' does not exist')
             }
 
-            destinations[destination] = require(libpath)(settings.log_destinations[destination])
+            destinations[destination] = require(libpath)(config)
           })
 
           Object.keys(settings.log_destinations).forEach(function(destination){

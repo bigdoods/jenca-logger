@@ -11,6 +11,17 @@ var Router = require('./router')
 var pad = require('pad');
 
 
+var args = require('minimist')(process.argv, {
+  alias:{
+    p:'port',
+  },
+  default:{
+    port:process.env.PORT || 80,
+    slack_url:process.env.SLACK_URL || settings.slack.integration_url,
+    slack_username:process.env.SLACK_USERNAME || settings.slack.username,
+  }
+})
+
 var sourceData = [
   {
     level:'critical',
@@ -29,7 +40,7 @@ function getSourceStream(){
 
 tape('basic http request response', function (t) {
 
-  var router = Router({})
+  var router = Router(args)
   var server = http.createServer(router.handler)
 
   async.series([
