@@ -12,5 +12,5 @@ Clone jenca-cloud repo and follow the readme for vagrant and jencactl to install
 
 For development and testing, within jenca-logger directory run:
 ```bash
-$ npm test
+$ SLACK_USERNAME="Jenca Logger" SLACK_URL="https://hooks.slack.com/services/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" npm test
 ```
