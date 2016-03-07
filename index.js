@@ -8,8 +8,8 @@ var args = require('minimist')(process.argv, {
   },
   default:{
     port:process.env.PORT || 80,
-    slack_url:process.env.SLACK_URL || settings.slack.integration_url,
-    slack_username:process.env.SLACK_USERNAME || settings.slack.username,
+    slack_url:process.env.SLACK_URL || settings.log_destinations.slack.integration_url,
+    slack_username:process.env.SLACK_USERNAME || settings.log_destinations.slack.username,
   }
 })
 
