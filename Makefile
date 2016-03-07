@@ -20,7 +20,7 @@ test:
 		jenca-cloud/$(SERVICE):$(VERSION)-dev test
 
 # this automates the installation of the node_modules folder on the host
-developer: build
+developer: images
 	@docker run -ti --rm \
 		--entrypoint "bash" \
 		-v $(PWD)/src/api:/srv/app \

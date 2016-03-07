@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jenca-cloud/jenca-logger.svg?branch=master)](https://travis-ci.org/jenca-cloud/jenca-logger)
+[![Build Status](https://travis-ci.org/jenca-cloud/jenca-logger.svg)](https://travis-ci.org/jenca-cloud/jenca-logger)
 
 # jenca-logger
 
