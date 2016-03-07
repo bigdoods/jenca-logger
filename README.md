@@ -14,3 +14,5 @@ For development and testing, within jenca-logger directory run:
 ```bash
 $ SLACK_USERNAME="Jenca Logger" SLACK_URL="https://hooks.slack.com/services/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" npm test
 ```
+
+The environment variables are setup in travis for CI to work.
